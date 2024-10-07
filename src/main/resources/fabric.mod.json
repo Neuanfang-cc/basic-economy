@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "basic_economy",
+	"version": "${version}",
+	"name": "Basic Economy",
+	"description": "This is the base for the Neuanfang.cc Economy Mods.",
+	"authors": [
+		"FildCommander"
+	],
+	"contact": {
+		"homepage": "https://neuanfang.cc",
+		"sources": "https://github.com/Neuanfang.cc/basic-economy"
+	},
+	"license": "MIT",
+	"icon": "assets/basic_economy/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"cc.neuanfang.basic_economy.BasicEconomy"
+		],
+		"fabric-datagen": [
+			"cc.neuanfang.basic_economy.BasicEconomyDataGenerator"
+		],
+		"client": [
+			"cc.neuanfang.basic_economy.BasicEconomyClient"
+		]
+	},
+	"mixins": [
+		"basic_economy.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
