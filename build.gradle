@@ -16,6 +16,11 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+	mavenCentral()
+	maven {
+		url "https://maven.nucleoid.xyz/"
+		name "Nucleoid"
+	}
 }
 
 fabricApi {
@@ -30,7 +35,18 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	
+
+	// SQLite driver
+	runtimeOnly 'org.xerial:sqlite-jdbc:3.36.0.3'
+
+	// Permissions API
+	include(modImplementation('me.lucko:fabric-permissions-api:0.3.1'))
+
+	// PlaceHolder API
+	//modImplementation include("eu.pb4:placeholder-api:2.4.1+1.21")
+
+	// Translation API
+	modImplementation include("xyz.nucleoid:server-translations-api:2.3.1+1.21-pre2")
 }
 
 processResources {

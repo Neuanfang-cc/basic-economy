@@ -1,0 +1,12 @@
+{
+  "balanceadmin.get.success": "The Balance from %s is %s.",
+  "balanceadmin.add.success": "The Balance of %s was added by %s.",
+  "balanceadmin.subtract.success": "The Balance of %s was subtracted by %s.",
+  "balanceadmin.set.success": "The Balance of %s was set to %s.",
+  "balanceadmin.failed": "The Balance of %s was not changed!",
+
+  "balance.get": "Your Balance is: $%s",
+
+  "balance.pay.success": "Successfully payed $%s to %s.",
+  "balance.pay.failed": "The Payment to %s failed!"
+}
