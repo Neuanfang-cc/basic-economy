@@ -8,5 +8,9 @@
   "balance.get": "Your Balance is: $%s",
 
   "balance.pay.success": "Successfully payed $%s to %s.",
-  "balance.pay.failed": "The Payment to %s failed!"
+  "balance.pay.failed": "The Payment to %s failed!",
+
+
+  "item.basic_economy_advanced_ominous_trial_key": "Advanced Ominous Trial Key",
+  "item.basic_economy_shop_key": "Shop Key"
 }

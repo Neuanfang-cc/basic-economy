@@ -8,5 +8,9 @@
   "balance.get": "Dein Kontostand ist: %s€",
 
   "balance.pay.success": "Erfolgreich %s€ an %s bezahlt.",
-  "balance.pay.failed": "Die Zahlung an %s ist fehlgeschlagen!"
+  "balance.pay.failed": "Die Zahlung an %s ist fehlgeschlagen!",
+
+
+  "item.basic_economy_advanced_ominous_trial_key": "Fortschrittlicher Unheilvoller Prüfungsschlüssel",
+  "item.basic_economy_shop_key": "Ladenschlüssel"
 }

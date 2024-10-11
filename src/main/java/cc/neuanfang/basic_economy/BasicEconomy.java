@@ -1,6 +1,7 @@
 package cc.neuanfang.basic_economy;
 
 import cc.neuanfang.basic_economy.command.*;
+import cc.neuanfang.basic_economy.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
@@ -14,6 +15,8 @@ public class BasicEconomy implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		DatabaseManager.connect();
+
+		//ModItems.registerModItems();
 
 		CommandRegistrationCallback.EVENT.register(BalanceCommand::register);
 		CommandRegistrationCallback.EVENT.register(PayCommand::register);
