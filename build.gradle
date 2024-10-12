@@ -37,16 +37,18 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// SQLite driver
-	runtimeOnly 'org.xerial:sqlite-jdbc:3.36.0.3'
+	runtimeOnly 'org.xerial:sqlite-jdbc:3.46.1.3'
+	modImplementation include('org.xerial:sqlite-jdbc:3.46.1.3')
 
 	// Permissions API
 	include(modImplementation('me.lucko:fabric-permissions-api:0.3.1'))
 
-	// PlaceHolder API
-	//modImplementation include("eu.pb4:placeholder-api:2.4.1+1.21")
 
-	// Translation API
+	// Patbox APIs
+	//modImplementation include("eu.pb4:placeholder-api:2.4.1+1.21")
 	modImplementation include("xyz.nucleoid:server-translations-api:2.3.1+1.21-pre2")
+	modImplementation include("eu.pb4:polymer-core:0.9.16+1.21.1")
+	modImplementation include("eu.pb4:polymer-resource-pack:0.9.16+1.21.1")
 }
 
 processResources {
