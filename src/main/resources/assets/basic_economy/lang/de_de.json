@@ -1,0 +1,17 @@
+{
+  "balanceadmin.get.success": "Der Kontostand von %s ist %s€.",
+  "balanceadmin.add.success": "Der Kontostand von %s wurde um %s€ erhöht.",
+  "balanceadmin.subtract.success": "Der Kontostand von %s wurde um %s€ reduziert.",
+  "balanceadmin.set.success": "Der Kontostand von %s wurde auf %s€ gesetzt.",
+  "balanceadmin.failed": "Der Kontostand von %s wurde nicht verändert!",
+
+  "balance.get": "Dein Kontostand ist: %s€",
+
+  "balance.pay.success": "Erfolgreich %s€ an %s bezahlt.",
+  "balance.pay.failed": "Die Zahlung an %s ist fehlgeschlagen!",
+
+  "item-group.basic_economy.items": "Basis Währung",
+
+  "item.basic_economy.advanced_ominous_trial_key": "Fortschrittlicher Unheilvoller Prüfungsschlüssel",
+  "item.basic_economy.shop_key": "Ladenschlüssel"
+}
