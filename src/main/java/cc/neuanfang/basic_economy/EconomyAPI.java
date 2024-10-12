@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.UUID;
 
 public class EconomyAPI {
-    public static final DecimalFormat df = new DecimalFormat("#.00");
+    public static final DecimalFormat df = new DecimalFormat("0.00");
 
     // Kontostand eines Spielers abrufen
     public static double getBalance(UUID uuid) {
