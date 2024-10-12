@@ -1,5 +1,9 @@
 package cc.neuanfang.basic_economy;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -11,9 +15,19 @@ public class DatabaseManager {
 
     public static void connect() {
         try {
-            connection = DriverManager.getConnection("jdbc:sqlite:economy.db");
+            String dbPath = "./config/" + BasicEconomy.MOD_ID + "/economy.db";
+            Path path = Paths.get(dbPath);
+
+            // Ensure the directory exists
+            Path directory = path.getParent();
+            if (directory != null && !Files.exists(directory)) {
+                Files.createDirectories(directory);
+                BasicEconomy.LOGGER.info("Created config Directory");
+            }
+
+            connection = DriverManager.getConnection("jdbc:sqlite:" + dbPath);
             createTables();
-        } catch (SQLException e) {
+        } catch (SQLException | IOException e) {
             BasicEconomy.LOGGER.error(Arrays.toString(e.getStackTrace()));
         }
     }
